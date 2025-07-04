@@ -4,7 +4,7 @@ import pandas as pd
 import google.generativeai as genai
 
 # --- CONFIGURE GOOGLE GEMINI ---
-Google.configure(api_key=st.secret["GEMINI_API_KEY"])
+Google.configure(api_key=st.secrets["GEMINI_API_KEY"])
 model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
 
 # --- LOAD CSV DATA ---
